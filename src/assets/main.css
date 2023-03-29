@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+body {
+  background: #f2f2f2;
+  color: #444;
+  margin: 0;
+}
+body * {
+  font-family: "Poppins";
+}
+
+/* header */
+header {
+  text-align: center;
+  background: #e7e7e7;
+  padding-top: 20px;
+}
+header .title
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  max-width: 60px;
+  transform: rotate(-10deg);
+}
+header h1 {
+  margin: 0;
+  font-size: 2em;
+  padding-top: 25px;
+  margin-left: 15px;
+  color: #777;
+  transform: rotate(2deg);
+}
+.new-task-form{
+  background-color: #e7e7e7;
+  padding: 20px 0;
+}
+form
+{
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10x;
+}
+form button
+{
+  background-color: #ffd859;
+  border: 0;
+  padding: 10px;
+  font-family: Poppins;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+form input
+{
+  border: 0;
+  padding: 10px;
+  border-radius: 6px;
+  color: #555;
+  font-size: 12px;
+  margin-right: 10px;
+}
+.task-list{
+  max-width: 640px;
+  margin: 20px auto;
+}
+.task{
+  padding: 6px 20px;
+  background: #FFF;
+  margin-top: 20px;
+  border-radius: 4px;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.task h3, .task .icons
+{
+  display: inline-block;
+}
+.task .icons{
+  text-align: right;
+}
+.task i{
+  font-size: 1.4em;
+  margin-left: 6px;
+  cursor: pointer;
+  color: #bbb;
+  transition: all 0.2s;
+}
+.task i:hover{
+  transform: scale(1.2);
+  color: #ff005d;
+  opacity: 0.7;
+}
+.task i.active{
+  color: #ff005d;
+}
+.filter
+{
+  width: 640px;
+  margin: 10px auto;
+  text-align: right;
+}
+.filter button
+{
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #FFF;
+  border: 1px solid #555;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+.filter .active
+{
+  background-color: #ffd859;
+  color: #FFF;
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  font-size: 13px
+}
